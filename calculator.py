@@ -29,3 +29,18 @@ def calculate():
             end()
 
     repeat()
+
+
+def repeat():
+    text = input("Czy chcesz liczyć dalej? Y/N: ")
+    if text == "Y":
+        calculate()
+    elif text == "N":
+        end()
+
+
+def end():
+    print("End of counting")
+    exit()
+
+calculate()
