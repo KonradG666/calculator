@@ -56,10 +56,10 @@ Wybierz funkcję, posługując się adekwatną liczbą:
 5-Exit
 """))
 
-    # check input
+
     if operation in (1, 2, 3, 4, 5):
 
-        # addition
+
         if operation == 1:
             print("Dodawanie")
             add_more_numbers()
@@ -95,7 +95,8 @@ def add_more_numbers():
     if more_digits == "Y":
         num = int(input("Podaj liczby: "))
         print(f"Dodaje: {num}")
-        print(f"Wynik to: ", sum(num))   # TU COS NIE ŚMIGA Z 3 LINIJEK OSTATNICH
+        print(f"Wynik to: ", sum(num))
+        # TU COS NIE ŚMIGA Z 3 LINIJEK OSTATNICH
     elif more_digits == "N":
         num1, num2 = set_input()
         print(f"Dodaje {num1} i {num2}")
@@ -107,7 +108,8 @@ def multi_more():
     if more_digits2 == "Y":
         num = int(input("Podaj liczby: "))
         print(f"Mnożę: {num} przez {num}")
-        print(f"Wynik to: ", num * num)         # TU COS NIE ŚMIGA Z 3 LINIJEK OSTATNICH
+        print(f"Wynik to: ", num * num)
+        # TU COS NIE ŚMIGA Z 3 LINIJEK OSTATNICH
     elif more_digits2 == "N":
         num1, num2 = set_input()
         print(f"Mnożę {num1} i {num2}")
